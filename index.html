@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Economy app</title>
+  </head>
+  <body>
+    <header>
+      <h1>My economy</h1>
+    </header>
+    <div class="formContainer">
+    <form id="transactionForm">
+      <div class="form">
+        transaction type
+        <input id="income" type="radio" name="typeSelector" value="income"/>
+        <label for="income">Income</label>
+
+        <input id="outcome" type="radio" name="typeSelector" value="outcome"/>
+        <label for="outcome">Outcome</label>
+      </div> 
+
+      <div class="form">
+        <label for="descripcion">Description</label>
+        <input id="descripcion" type="text" name="descripcion"/>
+      </div>
+
+      <div class="form">
+        <label for="amount">Amount</label>
+        <input id="amount" type="number" name="amount" />
+      </div>
+
+      <div class="form">
+        <label for="category">category</label>
+        <input type="text" id="category" name="category"/>
+      </div>
+      <div class="form">
+          <button >add</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="table">
+        <table id="transactionTable">
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Category</th>
+            </tr>
+        </table>
+    </div>
+<script src="app/app.js"></script>
+
+  </body>
+</html>
